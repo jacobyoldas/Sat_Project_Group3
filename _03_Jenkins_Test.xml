@@ -1,0 +1,8 @@
+<suite name="Suit 1" thread-count="1">
+  <test name="Test">
+    <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="Runners._03_TestRunnerListenerSparkReport"></class>
+    </classes>
+  </test>
+</suite>
