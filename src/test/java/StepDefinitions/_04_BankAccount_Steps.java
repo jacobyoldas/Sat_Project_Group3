@@ -40,6 +40,7 @@ public class _04_BankAccount_Steps {
         dc.sendKeysFunction(dc.getIntegrationCodeInput(), integrationCode);
         dc.clickFunction(dc.getSaveButton());
 
+
     }
 
     @And("User edit Bank Account {string} and change it to {string}")
