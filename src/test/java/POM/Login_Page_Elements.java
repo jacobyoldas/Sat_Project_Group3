@@ -18,15 +18,20 @@ public class Login_Page_Elements extends _01_Base_POM {
   @FindBy(css = "button[aria-label='LOGIN']")
   private WebElement loginButton;
 
-  @FindBy(xpath = "//button[text()='Accept all cookies']")
-  private WebElement acceptCookiesButton;
-  private String username = "richfield.edu";
-  private String password = "Richfield2020!";
-  public void userEnterAdminCredentials() {
-    waitUntilVisibleAndClickable(acceptCookiesButton);
-    clickFunction(acceptCookiesButton);
-    usernameInput.sendKeys(username);
-    passwordInput.sendKeys(password);
-    loginButton.click();
+  public WebElement getUsernameInput() {
+    return usernameInput;
   }
+
+  public WebElement getPasswordInput() {
+    return passwordInput;
+  }
+
+  public WebElement getLoginButton() {
+    return loginButton;
+  }
+
+  public WebElement getAcceptCookiesButton() {
+    return acceptCookiesButton;
+  }
+
 }
