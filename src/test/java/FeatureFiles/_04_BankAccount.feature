@@ -16,6 +16,7 @@ Feature: Bank Account (Add, Edit, Delete) Functionality Test
     And User create same Bank Account "<bankName>" and "<iban>" and "<integrationCode>"
     Then Unsuccessful message should display
 
+
     Examples:
       | bankName   | iban    | integrationCode |
       | ToffeeBank | SP98 71 | 199             |
