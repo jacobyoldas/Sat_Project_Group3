@@ -74,87 +74,66 @@ public class _03_Dialog_Content_Elements extends _01_Base_POM {
   public WebElement getAddButton() {
     return addButton;
   }
-
   public WebElement getNameInput() {
     return nameInput;
   }
-
   public WebElement getSaveButton() {
     return saveButton;
   }
-
   public WebElement getSuccessMessage() {
     return successMessage;
   }
-
   public WebElement getAlreadyExist() {
     return alreadyExist;
   }
-
   public WebElement getSearchInput() {
     return searchInput;
   }
-
   public WebElement getSearchButton() {
     return searchButton3;
   }
-
   public WebElement getSearchInput2() {
     return searchInput2;
   }
-
   public WebElement getEditButton() {
     return editButton;
   }
-
   public WebElement getDeleteButton() {
     return deleteButton;
   }
-
   public WebElement getDeleteDialogBtn() {
     return deleteDialogBtn;
   }
-
   public WebElement getIbanInput() {
     return ibanInput;
   }
-
   public WebElement getCurrencyInputDropdown() {
     return currencyInputDropdown;
   }
-
   public WebElement getCurrencyUsd() {
     return currencyUsd;
   }
-
   public WebElement getCurrencyEur() {
     return currencyEur;
   }
-
   public WebElement getCurrencyTry() {
     return currencyTry;
   }
-
   public WebElement getIntegrationCodeInput() {
     return integrationCodeInput;
   }
-
   public WebElement getSearchName() {
     return searchName;
   }
-
   public WebElement getSearchButton3() {
     return searchButton3;
   }
-
   public WebElement getDeleteButton2() {
     return deleteButton2;
   }
-
   public WebElement getUnsuccessfulMessage() {
     return unsuccessfulMessage;
   }
-
   public WebElement getNoDataMessage() {
     return noDataMessage;
   }
