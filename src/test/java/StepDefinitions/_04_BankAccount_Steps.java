@@ -98,7 +98,6 @@ public class _04_BankAccount_Steps {
         dc.validationText(dc.getSuccessMessage(), "success");
     }
 
-
     @Then("Success delete message should be displayed")
     public void successDeleteMessageShouldBeDisplayed() {
         dc.waitUntilVisibleAndClickable(dc.getSuccessMessage());
@@ -109,7 +108,6 @@ public class _04_BankAccount_Steps {
     public void userShouldSeeNoDataMessageShouldBeDisplayed() {
         dc.waitUntilVisibleAndClickable(dc.getNoDataMessage());
         dc.validationText(dc.getNoDataMessage(), "no data");
-
     }
 }
 
