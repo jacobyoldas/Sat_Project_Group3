@@ -6,7 +6,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class _02_Navigation_Bar_Elements extends _01_Base_POM {
-
   public _02_Navigation_Bar_Elements(){
     PageFactory.initElements(Driver.getDriver(),this);
   }
