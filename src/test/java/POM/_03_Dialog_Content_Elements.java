@@ -99,8 +99,8 @@ public class _03_Dialog_Content_Elements extends _01_Base_POM {
     return searchButton3;
   }
 
-  public WebElement getSearchInput3() {
-    return searchInput3;
+  public WebElement getSearchInput2() {
+    return searchInput2;
     }
 
   public WebElement getEditButton() {
