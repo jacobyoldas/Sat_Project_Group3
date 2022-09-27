@@ -3,7 +3,7 @@ Feature: Bank Account (Add, Edit, Delete) Functionality Test
   Scenario Outline: Add Bank Account
     And User create Bank Account "<bankName>" and "<iban>" and "<integrationCode>"
     Then Success add message should be displayed displayed
-    Examples:
+    Examples: 
       | bankName   | iban    | integrationCode |
       | ToffeeBank | SP98 71 | 199             |
   @SmokeTest
