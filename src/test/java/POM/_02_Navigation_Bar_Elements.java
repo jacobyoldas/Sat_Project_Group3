@@ -20,6 +20,10 @@ public class _02_Navigation_Bar_Elements extends _01_Base_POM {
   @FindBy(xpath = "//span[text()='Nationalities']")
   private WebElement nationalities;
 
+  @FindBy(xpath = "//span[text()='Bank Accounts']")
+  private WebElement bankAccountButton;
+
+
   public WebElement getSetupOne() {
     return setupOne;
   }
@@ -32,6 +36,7 @@ public class _02_Navigation_Bar_Elements extends _01_Base_POM {
     return nationalities;
   }
 
-
-
+  public WebElement getBankAccountButton() {
+    return bankAccountButton;
+  }
 }
