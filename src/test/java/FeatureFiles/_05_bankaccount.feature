@@ -27,7 +27,7 @@ Feature: Bank Account (Add, Edit, Delete) Functionality Test
     Examples:
       | createdBankName |
       | PeanutBank      |
-  @SmokeTest
+  @SmokeTest 
   Scenario Outline: Accessing deleted Bank Account
     And User should search deleted Bank data "<createdBankName>"
     Then User should see no data message should be displayed
