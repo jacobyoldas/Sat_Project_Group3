@@ -10,7 +10,8 @@ import org.testng.annotations.AfterClass;
     tags = "@SmokeTest",
     features = {"src/test/java/FeatureFiles"},
     glue = {"StepDefinitions"},
-    plugin= {"html:target/site/cucumber-smoke-reports.html"}
+//    plugin= {"html:target/site/cucumber-smoke-reports.html"}
+    plugin= {"pretty","html:target/site/cucumber-pretty","json:target/cucumber/cucumber.json"}
 )
 
 public class _02_TestRunnerSmoke extends AbstractTestNGCucumberTests {
