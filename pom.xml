@@ -135,7 +135,7 @@
           <!--      &lt;!&ndash;     Paralele çalışma yok iken diren runner class çalıştırmak aşağıdaki bölüm kullanılır.&ndash;&gt;-->
                                         <includes>
           <!--&lt;!&ndash;     &lt;!&ndash;       &lt;!&ndash; for  run class or classes  **/:bulunduğu lokasyonu bütün klasörlere göre bulabiliyor   &ndash;&gt;&ndash;&gt;&ndash;&gt;-->
-                                           <include>**\_07_TestRunnerParallel_MasterReport.java</include>-->
+                                           <include>**\_02_TestRunnerSmoke.java</include>-->
 <!--                                       <include>**/runners/*TestRunner*.java</include>-->
                                         </includes>
           <testFailureIgnore>true</testFailureIgnore>
