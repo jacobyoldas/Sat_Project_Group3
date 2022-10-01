@@ -6,7 +6,7 @@ Feature: Positions Feature Function
 
     Examples:
       | Name      | ShortName |
-      | Position1 | POS1      |
+      | Position2 | POS1      |
 
 
   Scenario Outline: Search Positions
@@ -15,7 +15,7 @@ Feature: Positions Feature Function
 
     Examples:
       | Name      |
-      | Position1 |
+      | Position2 |
 
   Scenario Outline: Search Invalid Positions
     When User should be able to search "<invalidName>"and click search button
@@ -33,7 +33,7 @@ Feature: Positions Feature Function
 
     Examples:
       | existingName | newName         |
-      | Position1    | updatedPosition |
+      | Position2    | updatedPosition |
 
   Scenario Outline: Delete the Positions
     And User delete the positions "<newName>"
