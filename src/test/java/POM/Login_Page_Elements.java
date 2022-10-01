@@ -33,7 +33,7 @@ public class Login_Page_Elements extends _01_Base_POM {
     return loginButton;
   }
 
-  public WebElement getAcceptCookiesButton() {
+ public WebElement getAcceptCookiesButton() {
     return acceptCookiesButton2;
   }
 
