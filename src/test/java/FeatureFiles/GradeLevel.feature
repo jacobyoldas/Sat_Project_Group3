@@ -32,10 +32,9 @@ Feature: Grade Levels (Add, Edit, Delete) Functionality Test
 
 
   @SmokeTest
+
   Scenario: Delete Grade Levels
     And User delete Grade Levels createdName
     Then Success delete message should be displayed
-
-
 
 
