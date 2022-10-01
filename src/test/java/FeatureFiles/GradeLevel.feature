@@ -6,8 +6,6 @@ Feature: Grade Levels (Add, Edit, Delete) Functionality Test
     And User create Grade Levels "<Name>" and "<ShortName>" and "<Order>"
     Then Success add message should be displayed displayed
 
-
-
     Examples:
       | Name   | ShortName | Order |
       | Grade1 | GO        | 299   |
@@ -34,13 +32,9 @@ Feature: Grade Levels (Add, Edit, Delete) Functionality Test
 
 
   @SmokeTest
-  Scenario Outline: Delete Grade Levels
-    And User delete Bank Account "<createdName>"
+  Scenario: Delete Grade Levels
+    And User delete Grade Levels createdName
     Then Success delete message should be displayed
-
-    Examples:
-      | createdName |
-      | GradeABCD   |
 
 
 
