@@ -27,7 +27,7 @@ public class Hooks{
     lp.sendKeysFunction(lp.getUsernameInput(), "richfield.edu");
     lp.sendKeysFunction(lp.getPasswordInput(), "Richfield2020!");
     lp.clickFunction(lp.getLoginButton());
-    //    lp.userEnterAdminCredentials();
+    // lp.userEnterAdminCredentials();
    }
   @After
   public void tearDown(Scenario scenario){

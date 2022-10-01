@@ -18,6 +18,9 @@ public class Login_Page_Elements extends _01_Base_POM {
   @FindBy(css = "button[aria-label='LOGIN']")
   private WebElement loginButton;
 
+  @FindBy(xpath = "//button[text()='Accept all cookies']")
+  private WebElement acceptCookiesButton2;
+
   public WebElement getUsernameInput() {
     return usernameInput;
   }
@@ -31,7 +34,7 @@ public class Login_Page_Elements extends _01_Base_POM {
   }
 
   public WebElement getAcceptCookiesButton() {
-    return acceptCookiesButton;
+    return acceptCookiesButton2;
   }
 
 }
