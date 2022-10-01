@@ -6,6 +6,7 @@ Feature: Grade Levels (Add, Edit, Delete) Functionality Test
     And User create Grade Levels "<Name>" and "<ShortName>" and "<Order>"
     Then Success add message should be displayed displayed
 
+
     Examples:
       | Name   | ShortName | Order |
       | Grade1 | GO        | 299   |
