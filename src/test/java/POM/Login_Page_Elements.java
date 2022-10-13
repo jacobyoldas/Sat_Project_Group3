@@ -21,6 +21,9 @@ public class Login_Page_Elements extends _01_Base_POM {
   @FindBy(xpath = "//button[text()='Accept all cookies']")
   private WebElement acceptCookiesButton;
 
+
+
+
   public WebElement getUsernameInput() {
     return usernameInput;
   }
