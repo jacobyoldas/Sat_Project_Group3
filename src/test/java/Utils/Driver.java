@@ -47,8 +47,6 @@ public class Driver {
           } else {
             threadDriver.set(new ChromeDriver());
           }
-
-
             break;
 
         case "firefox":
