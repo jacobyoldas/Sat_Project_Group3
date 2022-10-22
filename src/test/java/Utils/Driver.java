@@ -35,12 +35,21 @@ public class Driver {
         case "chrome":
           WebDriverManager.chromedriver().setup();
 
-          // 39. -41. line if for to make jenkins running background for chrome full size to adjust
-          ChromeOptions options=new ChromeOptions();
-          options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--window-size=1400,2400");
-          threadDriver.set(new ChromeDriver(options)); // bu thread e chrome istenmişşse ve yoksa bir tane ekleniyor
-          // 40. line daki optionlara gore calistir diyorsun ve max olculerde calistir boylece hata vermesini englellioz
-         break;
+          if(!runningFromIJ()) { // eger Inteligge de degilse yani Jenkinsde calistir bu parti ama
+            //else ise normar inteligede calistir
+
+            // 39. -41. line if for to make jenkins running background for chrome full size to adjust
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage",
+                "--disable-gpu", "--window-size=1400,2400");
+            threadDriver.set(new ChromeDriver(options)); // bu thread e chrome istenmişşse ve yoksa bir tane ekleniyor
+            // 40. line daki optionlara gore calistir diyorsun ve max olculerde calistir boylece hata vermesini englellioz
+          } else {
+            threadDriver.set(new ChromeDriver());
+          }
+
+
+            break;
 
         case "firefox":
           WebDriverManager.firefoxdriver().setup();
@@ -76,6 +85,13 @@ public class Driver {
       driver=null;
       threadDriver.set(driver); // if driver comes again make it null
     }
+  }
+
+  public static boolean runningFromIJ(){
+
+    String classpath=System.getProperty("java.class.path");
+    return classpath.contains("idea_rt.jar");
+
   }
 
 }
