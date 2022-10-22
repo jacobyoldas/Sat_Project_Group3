@@ -189,7 +189,7 @@
   </build>
 
   <profiles><!--@Smoke ve @Regression Calistirmak icin lazim profiles ona gore build larimi koyom-->
-
+    <!--Boylece Jenkins te ayara degistirmeden sadece burda profile ekleyerekk hizli yapabilirim-->
     <profile>
       <id>Smoke_Test</id>
       <build>

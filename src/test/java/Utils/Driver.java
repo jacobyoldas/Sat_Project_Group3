@@ -6,6 +6,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
@@ -33,8 +34,13 @@ public class Driver {
       switch (browserName) {
         case "chrome":
           WebDriverManager.chromedriver().setup();
-          threadDriver.set(new ChromeDriver()); // this thread driver call the chrome new object
-          break;
+
+          // 39. -41. line if for to make jenkins running background for chrome full size to adjust
+          ChromeOptions options=new ChromeOptions();
+          options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--window-size=1400,2400");
+          threadDriver.set(new ChromeDriver(options)); // bu thread e chrome istenmişşse ve yoksa bir tane ekleniyor
+          // 40. line daki optionlara gore calistir diyorsun ve max olculerde calistir boylece hata vermesini englellioz
+         break;
 
         case "firefox":
           WebDriverManager.firefoxdriver().setup();
