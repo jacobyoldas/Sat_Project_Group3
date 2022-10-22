@@ -180,7 +180,7 @@
         <configuration>
           <includes>
             <!-- for  run class or classes  **/:bulunduğu lokasyonu bütün klasörlere göre bulabiliyor   -->
-            <include>**/_01_TestRunnerAll.java</include>
+            <include>**/_02_TestRunnerSmoke.java</include>
           </includes>
           <testFailureIgnore>true</testFailureIgnore>
         </configuration>
