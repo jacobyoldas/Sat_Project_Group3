@@ -7,7 +7,7 @@ import org.testng.annotations.AfterClass;
 
 
 @CucumberOptions(
-    tags = "@SmokeTest",
+    tags = "@Regression",
     features = {"src/test/java/FeatureFiles"},
     glue = {"StepDefinitions"},
 //    plugin= {"html:target/site/cucumber-smoke-reports.html"}

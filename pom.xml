@@ -188,6 +188,59 @@
     </plugins>
   </build>
 
+  <profiles><!--@Smoke ve @Regression Calistirmak icin lazim profiles ona gore build larimi koyom-->
+
+    <profile>
+      <id>Smoke_Test</id>
+      <build>
+        <plugins>
+          <plugin><!--derlemek için-->
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.0.0-M1</version>
+            <configuration>
+
+              <includes>
+                <!-- for  run class or classes  **/:bulunduğu lokasyonu bütün klasörlere göre bulabiliyor   -->
+                <include>**/_01_TestRunnerAll.java</include>
+              </includes>
+              <testFailureIgnore>true</testFailureIgnore>
+
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+
+    </profile>
+
+
+    <profile>
+      <id>Regression_Test</id>
+      <build>
+        <plugins>
+          <plugin><!--derlemek için-->
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.0.0-M1</version>
+            <configuration>
+
+              <includes>
+                <!-- for  run class or classes  **/:bulunduğu lokasyonu bütün klasörlere göre bulabiliyor   -->
+                <include>**/_02_TestRunnerSmoke.java</include>
+              </includes>
+              <testFailureIgnore>true</testFailureIgnore>
+
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+
+    </profile>
+
+  </profiles>
+
+
+
   <repositories>
     <repository>
       <id>myMavenRepo.read</id>
